@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.simran.test.MainActivity">
+
+    <Button
+        android:id="@+id/findPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Source"
+        android:onClick="findPlace"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="25dp"
+        android:id="@+id/searched_address"
+        android:layout_above="@+id/finalSave"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/findPlace2" />
+
+    <Button
+        android:id="@+id/findPlace2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Destination"
+        android:onClick="findPlace2"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/findPlace"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/finalSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="finalSave"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
